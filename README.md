@@ -1,2 +1,4 @@
-# tsunami-terminal
-a school project about earthquakes and natural disasters
+changelog
+-
+ver 0.01 alpha
+-
