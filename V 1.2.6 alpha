@@ -1,0 +1,256 @@
+# hello! welcome to my goofy all project i made
+# it is quite simple but it took me a while to make
+# i hope you like it!
+#
+# ive hidden the code so you dont know what it is
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import time
+import os
+import socket
+
+
+hostname = socket.gethostname()
+IPAddr = socket.gethostbyname(hostname)
+
+
+ver = "V 1.2.6"
+x = 1
+cmd = "N/A"
+secret = 0
+qwerty = "no"
+enter = "no"
+a = 0
+cmd2 = "N/A"
+b = 0
+keys = 0
+
+print("hello! welcome to my project!")
+time.sleep(1)
+print("use 'help' to see all commands")
+time.sleep(1)
+
+while (x == 1):
+  print()
+  cmd = input("~/terminal$: ")
+  if (cmd == "ipaddrs"):
+    time.sleep(1)
+    print("ipV4 address: " + IPAddr)
+    cmd = "N/A"
+    
+  if cmd == "help":
+    time.sleep(1)
+    print("cmd:")
+    time.sleep(0.5)
+    print("struct_design")
+    time.sleep(0.5)
+    print("most_powerful_earthquake")
+    time.sleep(0.5)
+    print("most_powerful_tsunami")
+    time.sleep(0.5)
+    print("most_powerful_volcano")
+    time.sleep(0.5)
+    print("MMscale")
+    time.sleep(0.5)
+    print("help_advanced")
+    cmd = "N/A"
+    
+  if (cmd == "help_advanced"):
+    time.sleep(1)
+    print("ipaddrs")
+    time.sleep(0.5)
+    print("hostname")
+    time.sleep(0.5)
+    print("OSinfo")
+    time.sleep(0.5)
+    print("exit()")
+    time.sleep(0.5)
+    print("qwerty")
+    time.sleep(0.5)
+    print("logon")
+    cmd = "N/A"
+    
+  if (cmd == "OSinfo"):
+    time.sleep(1)
+    print("OS: " + os.name)
+    time.sleep(0.5)
+    print("shell version: " + ver)
+    time.sleep(0.5)
+    print("shell path: " + os.getcwd())
+    cmd = "N/A"
+
+  if (cmd == "logon"):
+    time.sleep(1)
+    print("password:")
+    enter = input()
+    if (enter == "kitteeeeen123"):
+      time.sleep(1)
+      print("dev mode is currently being worked on")
+      time.sleep(0.5)
+      a = 1
+      while (a == 1):
+        print()
+        cmd2 = input("~/terminal.dev$: ")
+        if (cmd2 == "exit()"):
+          time.sleep(1)
+          print("if error 1, it is perfectly fine")
+          time.sleep(1)
+          b = input("are you sure you want to exit? (y/n)")
+          if (b == "y"):
+            print("exiting...")
+            a = 0
+            cmd2 = "N/A"
+          if (b == "n"):
+            print("exit cancelled")
+            cmd2 = "N/A"
+          else:
+            print("dev.error 1:")
+            print("invalid input")
+            cmd2 = "N/A"
+        if (cmd2 == "dev.help"):
+          time.sleep(1)
+          print("exit()")
+          time.sleep(1)
+          print("secrets")
+          cmd2 = "N/A"
+        if (cmd2 == "secrets"):
+          print("did you know: QSERF launched in 2019?")
+          cmd2 = "N/A"
+          
+  if (cmd == "qwerty"):
+    secret = 1
+    time.sleep(2)
+    cmd = "N/A"
+    
+  if (cmd == "secrets"):
+    time.sleep(1)
+    qwerty = input("enter password: ")
+    if (secret == 1):
+      if (qwerty == "ok"):
+        time.sleep(1)
+        print("congratulations! you found the secret!")
+        cmd = "N/A"
+    else:
+      time.sleep(2)
+      print("error 2:")
+      time.sleep(0.5)
+      print("incorrect password or command token")
+      cmd = "N/A"
+      
+  if (cmd == "hostname"):
+    time.sleep(0.5)
+    print("server host name: " + hostname)
+    
+  if (cmd == "exit()"):
+    x = 0
+    quit()
+    
+  if cmd == "struct_design":
+    time.sleep(1)
+    print("how to make a structure more resilient")
+    print("to tsunamis and eartquakes")
+    time.sleep(2)
+    print("you need to make a structure that is")
+    print("thin and supported on stilts")
+    time.sleep(2)
+    print("the water will pass through the structure")
+    print("so it can stay steady without")
+    print("getting damaged or having to stand against a water wall")
+    time.sleep(1)
+    cmd = "N/A"
+    
+  if cmd == "most_powerful_earthquake":
+    time.sleep(1)
+    print("the most powerful earthquake is:")
+    time.sleep(1)
+    print("the 1960 chile earthquake is the most powerful")
+    print("earthquake because it was a 9.5 on the moment")
+    print("magnitude scale.")
+    time.sleep(1)
+    cmd = "N/A"
+    
+  if cmd == "most_powerful_tsunami":
+    time.sleep(1)
+    print("the most powerful tsunami is:")
+    time.sleep(1)
+    print("the 2004 indian ocean tsunami.")
+    time.sleep(1)
+    print("a 9.1 magnitude earthquake struck")
+    print("just off the coast of ")
+    print("sumtara in indonesia")
+    cmd = "N/A"
+    
+  if cmd == "most_powerful_volcano":
+    time.sleep(1)
+    print("the most powerful volcano is:")
+    time.sleep(1)
+    print("the 1883 krakatoa volcano in indonesia")
+    time.sleep(1)
+    print("the blast was the equivelent of")
+    print("200 megatons of TNT (840 PJ)")
+    time.sleep(1)
+    print("this makes it the most powerful volcano in the world")
+    cmd = "N/A"
+    
+  if (cmd == "MMscale"):
+    time.sleep(1)
+    print("the moment magnitude scale is")
+    print("the successor to the Richter scale.")
+    time.sleep(1)
+    print("the scale was created in 1979")
+    print("because scientests descovered that")
+    print("the richter scale kind of sucked.")
+    time.sleep(1)
+    print("the richter scale was far too weak")
+    print("and the moment magnitude scale was created")
+    cmd = "N/A"
+    
+  else:
+    time.sleep(2)
+    print("error 1:")
+    time.sleep(0.5)
+    print("command not found")
+    cmd = "N/A"
+    
