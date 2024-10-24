@@ -93,7 +93,9 @@ while (x == 1):
   error = "false"
   print()
   cmd = input("~/terminal$: ")
+
   if (cmd == "ipaddrs"):
+    error = "true"
     time.sleep(1)
     print("ipV4 address: " + IPAddr)
     cmd = "N/A"
