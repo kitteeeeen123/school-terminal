@@ -6,6 +6,7 @@ ver 1.2.6 alpha
 - added description
 
 ver 2.0.0 beta
+-
 - overhauled the ui
 - added a lot of new features
 - added a lot of new commands
