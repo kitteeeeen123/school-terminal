@@ -2,7 +2,7 @@ changelog
 -
 ver 0.1.4 alpha
 -
-- first open relese branch
+- first open release branch
 - added description
 
 ver 0.2.0 beta
