@@ -1,11 +1,11 @@
 changelog
 -
-ver 1.2.6 alpha
+ver 0.1.4 alpha
 -
 - first open relese branch
 - added description
 
-ver 2.0.0 beta
+ver 0.2.0 beta
 -
 - overhauled the ui
 - added a lot of new features
