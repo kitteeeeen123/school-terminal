@@ -1,3 +1,10 @@
+i wanted to make this for a school project and it is rolling along quite nicely. i like python and i thought this would be the perfect moment to 
+write a script for that purpose.
+
+replit link
+-
+https://replit.com/@kaiolsenstu/terminal
+
 changelog
 -
 ver 0.1.4 alpha
