@@ -3,6 +3,8 @@ write a script for that purpose.
 
 replit link
 -
+note: the replit link may be slightly more revised but i will remember to update the main code when it's done
+
 https://replit.com/@kaiolsenstu/terminal
 
 changelog
