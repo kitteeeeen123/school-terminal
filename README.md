@@ -22,3 +22,9 @@ ver 0.2.0 beta
 - secrets 
 - the wall of nothing
 - .dev
+
+ver 0.2.1
+-
+- made error 1 'nicer' then quickly changed it back
+- fixed case sensitive commands
+- added '2004_earthquake'
