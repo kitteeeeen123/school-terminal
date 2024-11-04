@@ -30,3 +30,12 @@ ver 0.2.1
 - made error 1 'nicer' then quickly changed it back
 - fixed case sensitive commands
 - added '2004_earthquake'
+
+ver 0.3.0 gamma
+-
+- added 'comments' dont look at the code!
+- failed base64
+- users
+- who actualy looks at this?
+- overhauled .dev functions
+- updated 'about' function
