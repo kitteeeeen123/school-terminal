@@ -1,6 +1,6 @@
-# hello! welcome to my goofy ahh project i made
-# it is quite simple but it took me a while to make
-# i hope you like it!
+# hello! welcome to my goofy ahh project I made
+# It is quite simple but it took me a while to make
+# I hope you like it!
 # best played at %80 zoom
 # dont look at the source code
 #
@@ -20,15 +20,19 @@
 # - secrets 
 # - the wall of nothing
 # - .dev
+#
 # ver 0.2.1 beta
 # - made error 1 'nicer' then quickly changed it back
 # - fixed case sensitive commands with the help of Mike
 # - added '2004_earthquake'
-# ver 0.2.2 beta
-# - added 'comments' dont look at the code!
+#
+# ver 0.3.0 gamma
+# - added 'comments'. dont look at the code!
 # - failed base64
-# - users
+# - user database
 # - who actualy looks at this?
+# - overhauled .dev functions and is in beta
+# - updated 'about' function
 
 
 
@@ -85,7 +89,7 @@ IPAddr = socket.gethostbyname(hostname)
 #dont look here. *cough. cough*
 
 
-ver = "V 0.2.1"
+ver = "V 0.3.0"
 x = 1
 cmd = "N/A"
 secret = 0
@@ -97,7 +101,6 @@ b = 0
 tsunami = "N/A"
 onlydevs = 0
 userbetter = "N/A"
-base64.b64decode(user)
 # idk how to make base64 run propperly so you could just see it in the source
 
 
@@ -109,7 +112,7 @@ if (user.lower() == "guest"):
   print("this would go faster if you had an account")
   time.sleep(10)
   
-if (user.lower() == "Paul.Bennett"):
+if (user.lower() == "paul.bennett"):
   #bennett's a G. but is he better than beiner???
   time.sleep(1)
   print("Oh! you're the short guy. I've heard about you! You're a very nice guy!")
@@ -125,9 +128,21 @@ if (user == "kitteeeeen123"):
   print("me! i would like to see you try to make this on your own")
   
 if (user.lower() == "aidan"):
+  #i know you hack gorrilla tag
   time.sleep(1)
   print("plz dont hack me. T~T")
+
+else:
+  #worse guest. hah, lol, L. like imagine being a guest, BUT WORSE
+  time.sleep(1)
+  print("error 3:")
+  time.sleep(0.5)
+  print("account not found")
+  time.sleep(1)
+  print("logging in as 'guest'")
+  user = "lolL'guest'"
   
+print()
 print("use 'help' to see all commands")
 
 #hey! loops are hard...
@@ -135,6 +150,7 @@ while (x == 1):
   error = "false"
   time.sleep(1)
   print()
+  #used to be 'connect$'
   cmd = input("~/terminal$: ")
 
   if (cmd.lower() == "user"):
@@ -246,6 +262,14 @@ while (x == 1):
     print("stackoverflow.com")
     time.sleep(0.5)
     print("w3schools.com")
+    time.sleep(0.5)
+    print()
+    # my incessant ramblings that I can't shut up about
+    print("my mental sanity")
+    time.sleep(0.5)
+    print("https://open.spotify.com/playlist\n/5mfDwRZYBpMQBWOCEQOOkz?si=i561rJr4QJ-hgV0RYkjFvQ")
+    time.sleep(1)
+    print("you have one chance to live. live it to the fullest")
     cmd = "N/A"
     time.sleep(1)
     
@@ -253,7 +277,9 @@ while (x == 1):
     #useless garbage that no other person would use
     error = "true"
     time.sleep(1)
-    print("OS: " + os.name)
+    print("host OS: " + os.name)
+    time.sleep(0.5)
+    print("OS name: connectOS")
     time.sleep(0.5)
     print("shell version: " + ver)
     time.sleep(0.5)
@@ -278,7 +304,7 @@ while (x == 1):
     if (enter == "kitteeeeen123"):
       error = "true"
       time.sleep(1)
-      print("dev mode is currently in alpha testing and will")
+      print("dev mode is currently in beta testing and will")
       time.sleep(0.5)
       print("be released in the next update")
       time.sleep(1)
@@ -294,13 +320,16 @@ while (x == 1):
           print()
           cmd2 = input("~/terminal.dev$: ")
         
-          if (cmd2.lower() == "exit()"):
+          if (cmd2.lower() == "exit().dev"):
             time.sleep(1)
             print("if error 1, it is perfectly fine")
             time.sleep(1)
             print("are you sure you want to exit? (y/n)")
             b = input()
+            
           if (b == "y"):
+            error = "true"
+            error2 = "true"
             print("exiting...")
             a = 0
             cmd2 = "N/A"
@@ -310,16 +339,21 @@ while (x == 1):
             cmd2 = "N/A"
             
           if (b == "n"):
+            error2 = "true"
             print("exit cancelled")
             cmd2 = "N/A"
 
           if (cmd2.lower() == "help"):
-            print("secrets")
+            error2 = "true"
+            print("secrets.dev")
             time.sleep(0.5)
-            print("nevergonnagiveyouup")
+            print("nevergonnagiveyouup.dev")
+            time.sleep(0.5)
+            print("exit().dev")
             cmd2 = "N/A"
-
-          if cmd2.lower() == "nevergonnagiveyouup":
+            
+          if cmd2.lower() == "nevergonnagiveyouup.dev":
+            error2 = "true"
             time.sleep(1)
             print("never gonna give you up")
             time.sleep(1)
@@ -327,9 +361,12 @@ while (x == 1):
             print("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
             print("never gonna let you down")
             
-          if (cmd2 == "secrets"):
+          if (cmd2 == "secrets.dev"):
             error2 = "true"
             print("ZGlkIHlvdSBrbm93OiBRU0VSRiBsYXVuY2hlZCBpbiAyMDE5Pw==")
+            time.sleep(1)
+            print("https://docs.google.com/document/d/1U7KZPqW2MoMpXmBjqGzTJExGv")
+            print("OnnVREVWD0Frna4Y5o/edit?tab=t.0")
             cmd2 = "N/A"
 
           else:
@@ -350,7 +387,7 @@ while (x == 1):
     #my main premise because i had to put this in
     error = "true"  
     time.sleep(1)
-    print("the indian earhquake disaster was a devestating")
+    print("the 2004 indian earhquake disaster was a devestating")
     time.sleep(0.5)
     print("earthquake had been a magnitude 9.1 earthquake,")
     time.sleep(0.5)
