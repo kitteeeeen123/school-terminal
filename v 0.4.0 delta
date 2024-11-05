@@ -1,0 +1,605 @@
+# hello! welcome to my goofy ahh project I made
+# It is quite simple but it took me a while to make
+# I hope you like it!
+# best played at %80 zoom
+# dont look at the source code
+#
+#
+#   changelog
+# --------------
+# ver 0.1.4 alpha
+# - finished rough outline and tweaked the code 
+# - added changelog
+# 
+# ver 0.2.0 beta
+# - overhauled the ui
+# - added a lot of new features
+# - added a lot of new commands
+# - replaced 'connect$' with '~/terminal$'
+# - fixed 'error 1' bug
+# - secrets 
+# - the wall of nothing
+# - .dev
+#
+# ver 0.2.1 beta
+# - made error 1 'nicer' then quickly changed it back
+# - fixed case sensitive commands with the help of Mike
+# - added '2004_earthquake'
+#
+# ver 0.3.0 gamma
+# - added 'comments'. dont look at the code!
+# - added 'why'
+# - failed base64
+# - user database
+# - who actualy looks at this?
+# - overhauled .dev functions and is in beta
+# - updated 'about' function
+# - hotfixes and subtle updates
+#
+# ver 0.4.0 delta
+# - b64 test
+# - fixed 'error 3' in the logon screen
+# - hotfixes
+# - added .dev functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import base64
+import os
+import socket
+import time
+
+
+#dont look here. *cough. cough*
+hostname = socket.gethostname()
+IPAddr = socket.gethostbyname(hostname)
+#dont look here. *cough. cough*
+
+
+ver = "V 0.3.0"
+x = 1
+cmd = "N/A"
+secret = 0
+qwerty = "no"
+enter = "no"
+a = 0
+cmd2 = "N/A"
+b = 0
+tsunami = "N/A"
+onlydevs = 0
+userbetter = "N/A"
+logon = "false"
+b64Test = "ZGVjaXBoZXI="
+b64test2 = base64.b64decode(b64Test)
+# idk how to make base64 run properly so you could just see it in the source
+
+
+user = input("user: ")
+if (user.lower() == "guest"):
+  logon = "true"
+  time.sleep(1)
+  print("logging in as 'guest'")
+  time.sleep(1)
+  print("this would go faster if you had an account")
+  time.sleep(10)
+  
+if (user.lower() == "paul"):
+  #bennett's a G. but is he better than beiner???
+  logon = "true"
+  time.sleep(1)
+  print("Oh! you're the short guy. I've heard about you! You're a very nice guy!")
+
+if (user.lower() == "mike"):
+  #for mikey~. UwU
+  logon = "true"
+  time.sleep(1)
+  print("short... but has boingy hair")
+  
+if (user == "kitteeeeen123"):
+  #yes
+  logon = "true"
+  time.sleep(1)
+  print("me! i would like to see you try to make this on your own")
+  
+if (user.lower() == "aidan"):
+  #i know you hack gorrilla tag
+  logon = "true"
+  time.sleep(1)
+  print("plz dont hack me. T~T")
+
+else:
+  #worse guest. hah, lol, L. like imagine being a guest, BUT WORSE
+  
+  if (logon == "false"):
+    time.sleep(1)
+    print("error 3:")
+    time.sleep(0.5)
+    print("account not found")
+    time.sleep(1)
+    print("logging in as 'guest'")
+    user = "lol, L'guest'"
+  
+print()
+print("use 'help' to see all commands")
+
+#hey! loops are hard...
+while (x == 1):
+  error = "false"
+  time.sleep(1)
+  print()
+  #used to be 'connect$'
+  cmd = input("~/terminal$: ")
+
+  if (cmd.lower() == "user"):
+    # incase you want to know yourself
+    error = "true"
+    time.sleep(1)
+    print(user)
+    cmd = "N/A"
+  
+  if (cmd.lower() == "why?"):
+    #why did i do this?
+    #i lost so much sleep from this
+    error = "true"
+    time.sleep(1)
+    print("i had a school project and i wanted to")
+    time.sleep(0.5)
+    print("go over the toop because i had an")
+    time.sleep(0.5)
+    print("ounce of freedom, so in turn I")
+    time.sleep(0.5)
+    print("created this monstrocity.")
+    time.sleep(2)
+    print("i also have way too much free time")
+    time.sleep(0.5)
+    print("and i wanted to be 'semi-productive'")
+    time.sleep(3)
+    print("this took me 3 hours")
+    time.sleep(1)
+    print("...")
+    time.sleep(2)
+    print("always cite your sources!")
+    cmd = "N/A"
+  
+  if (cmd.lower() == "ipaddrs"):
+    #i dare you >:)
+    error = "true"
+    time.sleep(1)
+    print("ipv4 address: " + IPAddr)
+    cmd = "N/A"
+    
+  if cmd.lower() == "help":
+    #this is the only 'good' help command
+    error = "true"
+    time.sleep(1)
+    print("cmd:")
+    time.sleep(0.5)
+    print("struct_design")
+    time.sleep(0.5)
+    print("most_powerful_earthquake")
+    time.sleep(0.5)
+    print("most_powerful_tsunami")
+    time.sleep(0.5)
+    print("most_powerful_volcano")
+    time.sleep(0.5)
+    print("MMscale")
+    time.sleep(0.5)
+    print("2004_earthquake")
+    time.sleep(0.5)
+    print("help_advanced")
+    time.sleep(0.5)
+    print("sources")
+    time.sleep(0.5)
+    print("all operations are not case sensitive")
+    cmd = "N/A"
+    
+  if (cmd.lower() == "help_advanced"):
+    #this entire thing is just a joke at this point
+    error = "true"
+    time.sleep(1)
+    print("why")
+    time.sleep(0.5)
+    print("ipaddrs")
+    time.sleep(0.5)
+    print("hostname")
+    time.sleep(0.5)
+    print("OSinfo")
+    time.sleep(0.5)
+    print("exit()")
+    time.sleep(0.5)
+    print("qwerty")
+    time.sleep(0.5)
+    print("logon")
+    time.sleep(0.5)
+    print("user")
+    cmd = "N/A"
+
+  if (cmd.lower() == "sources"):
+    #all mike did was make the code not case sensitive
+    error = "true"
+    time.sleep(1)
+    print()
+    print("information sources:")
+    time.sleep(1)
+    print("Paul Bennett")
+    time.sleep(0.5)
+    print("britanica.org")
+    time.sleep(0.5)
+    print("natinalgeographic.com")
+    time.sleep(0.5)
+    print("google.com")
+    time.sleep(1)
+    print()
+    print("coding sources:")
+    # remember: mike is a g
+    print("Mike de Castro")
+    time.sleep(0.5)
+    print("geeksforgeeks.org")
+    time.sleep(0.5)
+    print("stackoverflow.com")
+    time.sleep(0.5)
+    print("w3schools.com")
+    time.sleep(0.5)
+    print("ioflood.com")
+    time.sleep(0.5)
+    print()
+    # my incessant ramblings that I can't shut up about
+    print("my mental sanity")
+    time.sleep(0.5)
+    print("https://open.spotify.com/playlist\n/5mfDwRZYBpMQBWOCEQOOkz?si=i561rJr4QJ-hgV0RYkjFvQ")
+    time.sleep(1)
+    print("you have one chance to live. live it to the fullest")
+    cmd = "N/A"
+    time.sleep(1)
+    
+  if (cmd.lower() == "OSinfo"):
+    #useless garbage that no other person would use
+    error = "true"
+    time.sleep(1)
+    print("host OS: " + os.name)
+    time.sleep(0.5)
+    print("OS name: connectOS")
+    time.sleep(0.5)
+    print("shell version: " + ver)
+    time.sleep(0.5)
+    print("shell path: " + os.getcwd())
+    time.sleep(0.5)
+    print("active extentions:")
+    time.sleep(1)
+    print("import os")
+    time.sleep(0.5)
+    print("import time")
+    time.sleep(0.5)
+    print("import socket")
+    time.sleep(0.5)
+    print("import base64")
+    cmd = "N/A"
+##%% just for the memes UwU %%##
+  
+  if (cmd.lower() == "logon"):
+    time.sleep(1)
+    enter = input("user.dev: ")
+
+    if (enter == "kitteeeeen123"):
+      error = "true"
+      time.sleep(1)
+      print("dev mode is currently in beta testing and will")
+      time.sleep(0.5)
+      print("be released in the next update")
+      time.sleep(1)
+      print("are you sure that you want to logon? (y/n)")
+      onlydevs = input(": ")
+      if onlydevs == "y":
+        time.sleep(1)
+        a = 1
+        while (a == 1):
+          #i need more things here
+          error = "true"
+          error2 = "false"
+          print()
+          cmd2 = input("~/terminal.dev$: ")
+        
+          if (cmd2.lower() == "exit().dev"):
+            time.sleep(1)
+            print("if error 1, it is perfectly fine")
+            time.sleep(1)
+            print("are you sure you want to exit? (y/n)")
+            b = input()
+            
+          if (b == "y"):
+            error = "true"
+            error2 = "true"
+            print("exiting...")
+            a = 0
+            cmd2 = "N/A"
+          else:
+            print("dev.error 2:")
+            print("invalid input")
+            cmd2 = "N/A"
+            
+          if (b == "n"):
+            error2 = "true"
+            print("exit cancelled")
+            cmd2 = "N/A"
+
+          if (cmd2.lower() == "help"):
+            error2 = "true"
+            print("secrets.dev")
+            time.sleep(0.5)
+            print("nevergonnagiveyouup.dev")
+            time.sleep(0.5)
+            print("b64test.dev")
+            time.sleep(0.5)
+            print("exit().dev")
+            cmd2 = "N/A"
+            
+          if cmd2.lower() == "nevergonnagiveyouup.dev":
+            error2 = "true"
+            time.sleep(1)
+            print("never gonna give you up")
+            time.sleep(1)
+            #linkie in the description
+            print("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+            print("never gonna let you down")
+            cmd2 = "N/A"
+        
+          if (cmd2.lower() == "b64test.dev"):
+            error2 = "true"
+            time.sleep(1)
+            print("b64test.dev")
+            time.sleep(0.5)
+            print(b64test2)
+            cmd2 = "N/A"
+          
+          if (cmd2.lower() == "secrets.dev"):
+            error2 = "true"
+            print("ZGlkIHlvdSBrbm93OiBRU0VSRiBsYXVuY2hlZCBpbiAyMDE5Pw==")
+            time.sleep(1)
+            print("https://docs.google.com/document/d/1U7KZPqW2MoMpXmBjqGzTJExGv")
+            print("OnnVREVWD0Frna4Y5o/edit?tab=t.0")
+            time.sleep(0.5)
+            print("https://drive.google.com/drive/folders/1smvrve1rLb0ctfNSImYQ_aLMT86g-8Ox")
+            cmd2 = "N/A"
+
+          else:
+            if (error2 == "false"):
+              # oof. this is my dedecation
+              time.sleep(1)
+              print("dev.error 1:")
+              print("invalid command")
+              cmd2 = "N/A"
+
+      else:
+        print("dev.fail")
+        time.sleep(0.5)
+        print("dev.why do i do .dev")
+        ##%% all just for memes UwU %%##
+  
+  if (cmd.lower() == "2004_earthquake"):
+    #my main premise because i had to put this in
+    error = "true"  
+    time.sleep(1)
+    print("the 2004 indian earhquake disaster was a devestating")
+    time.sleep(1)
+    print("the event occoured when the indian tectonic plate shook")
+    time.sleep(0.5)
+    print("against the berma plate")
+    time.sleep(2)
+    print("earthquake had been a magnitude 9.1 earthquake,")
+    time.sleep(0.5)
+    print("and it was the most powerful earthquake in history")
+    time.sleep(2)
+    print("the event nearly")
+    time.sleep(0.5)
+    print("killed 200,000 people")
+    time.sleep(2)
+    print("the earthquake affected")
+    time.sleep(0.5)
+    print("the following countries:")
+    time.sleep(1)
+    print("Indonesia, Sri Lanka, India, Maldives, and Thailand")
+    time.sleep(3)
+    print("the event occurred at 7:59 on december, 2004")
+    time.sleep(0.5)
+    print("the earthquake caused a tunami that")
+    time.sleep(0.5)
+    print("did most of the damage")
+    time.sleep(2)
+    print("would you like to learn about the tsunami")
+    time.sleep(0.5)
+    print("(y/n)")
+    tsunami = input(": ")
+    #incase you dont want to learn about the tsunami for some reason
+    if (tsunami.lower() == "y"):
+      time.sleep(2)
+      print("soon after the earthquake,")
+      time.sleep(0.5)
+      print("a large tsunami struck the areas and many more")
+      time.sleep(1)
+      print("many more people died because of")
+      time.sleep(0.5)
+      print("the time to react was at a minimum")
+      time.sleep(2)
+      print("the total amount of casualties where")
+      time.sleep(1)
+      print("aproximatly 425,000 people where affected")
+      time.sleep(0.5)
+      print("in both of the incidents")
+      time.sleep(3)
+      print("the peak of the wave was 30 ft")
+      time.sleep(0.5)
+      print("and there was a lack of basic supplies for weeks")
+      time.sleep(0.5)
+      print("gaining more deaths ontop of the")
+      time.sleep(0.5)
+      print("already high number")
+    if tsunami.lower() == "n":
+      time.sleep(1)
+      print("exit")
+      tsunami = "N/A"
+      cmd = "N/A"
+    else:
+      error = "false"
+      cmd = "N/A"
+
+  ##%% how much random ahh code is in here UwU OwO %%##
+  if (cmd.lower() == "qwerty"):
+    error = "true"
+    secret = 1
+    time.sleep(2)
+    cmd = "N/A"
+    
+  if (cmd.lower() == "secrets"):
+    #secrets r gud O~o
+    time.sleep(1)
+    qwerty = input("enter password: ")
+    if (secret == 1):
+      if (qwerty.lower() == "ok"):
+        
+        time.sleep(1)
+        print("congratulations! you found the secret!")
+        cmd = "N/A"
+    else:
+      # you have to get qwerty first
+      time.sleep(2)
+      print("error 2:")
+      time.sleep(0.5)
+      print("incorrect password or command token")
+      cmd = "N/A"
+  ##%% how much random ahh code is in here UwU OwO %%##
+  if (cmd.lower() == "hostname"):
+    error = "true"
+    time.sleep(0.5)
+    print("server host name: " + hostname)
+    cmd = "N/A"
+    
+  if (cmd.lower() == "exit()"):
+    #will exit for some reason... idk
+    x = 0
+    quit()
+  
+  if cmd.lower() == "struct_design":
+    error = "true"
+    time.sleep(1)
+    print("how to make a structure more resilient")
+    print("to tsunamis and eartquakes")
+    time.sleep(2)
+    print("you need to make a structure that is")
+    print("thin and supported on stilts")
+    time.sleep(2)
+    print("the water will pass through the structure")
+    print("so it can stay steady without")
+    print("getting damaged or having to stand against a water wall")
+    time.sleep(1)
+    cmd = "N/A"
+    
+  if cmd.lower() == "most_powerful_earthquake":
+    error = "true"
+    time.sleep(1)
+    print("the most powerful earthquake is:")
+    time.sleep(1)
+    print("the 1960 chile earthquake is the most powerful")
+    print("earthquake because it was a 9.5 on the moment")
+    print("magnitude scale.")
+    time.sleep(1)
+    cmd = "N/A"
+    
+  if cmd.lower() == "most_powerful_tsunami":
+    error = "true"
+    time.sleep(1)
+    print("the most powerful tsunami is:")
+    time.sleep(1)
+    print("the 2004 indian ocean tsunami.")
+    time.sleep(1)
+    print("a 9.1 magnitude earthquake struck")
+    print("just off the coast of ")
+    print("sumtara in indonesia")
+    cmd = "N/A"
+    
+  if cmd.lower() == "most_powerful_volcano":
+    error = "true"
+    time.sleep(1)
+    print("the most powerful volcano is:")
+    time.sleep(1)
+    print("the 1883 krakatoa volcano in indonesia")
+    time.sleep(1)
+    print("the blast was the equivelent of")
+    print("200 megatons of TNT (840 PJ)")
+    time.sleep(1)
+    print("this makes it the most powerful volcano in the world")
+    cmd = "N/A"
+    
+  if (cmd.lower() == "MMscale"):
+    #can i use 'sucked'?
+    error = "true"
+    time.sleep(1)
+    print("the moment magnitude scale is")
+    time.sleep(0.5)
+    print("the successor to the Richter scale.")
+    time.sleep(1)
+    print("the scale was created in 1979")
+    time.sleep(0.5)
+    print("because scientests descovered that")
+    time.sleep(0.5)
+    print("the richter scale kind of sucked.")
+    time.sleep(1)
+    print("the richter scale was far too weak")
+    time.sleep(0.5)
+    print("and the moment magnitude scale was created")
+    time.sleep(2)
+    print("the moment magnnitude scale")
+    time.sleep(0.5)
+    print("escelates in powers of 10 instead")
+    time.sleep(0.5)
+    print("of adding 10")
+    time.sleep(1)
+    cmd = "N/A"
+    # if you type anything but a command. you will get this error.
+  else:
+    if (error == "false"):
+      time.sleep(1)
+      print("error 1:")
+      time.sleep(0.5)
+      print("invalid command")
+      cmd = "N/A"
