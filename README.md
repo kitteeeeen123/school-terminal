@@ -39,3 +39,10 @@ ver 0.3.0 gamma
 - who actualy looks at this?
 - overhauled .dev functions
 - updated 'about' function
+
+ver 0.4.0 delta
+-
+- b64 test
+- fixed 'error 3' in the logon screen
+- hotfixes
+- added .dev functions
