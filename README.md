@@ -40,9 +40,17 @@ ver 0.3.0 gamma
 - overhauled .dev functions
 - updated 'about' function
 
-ver 0.4.0 delta
+ver 0.3.1 gamma
 -
 - b64 test
 - fixed 'error 3' in the logon screen
 - hotfixes
 - added .dev functions
+
+ver 0.4.0
+-
+- removed users
+- remastered some command answer
+- fixed 'mmscale' and 'OSinfo'
+- fixed .dev by removing indents
+- added 'type 'help' for all commands'
