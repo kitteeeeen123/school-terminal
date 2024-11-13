@@ -5,7 +5,7 @@ replit link
 -
 note: the replit link may be slightly more revised but i will remember to update the main code when it's done
 
-https://replit.com/@kaiolsenstu/terminal
+https://replit.com/@kitteeeeen123/terminal
 
 changelog
 -
