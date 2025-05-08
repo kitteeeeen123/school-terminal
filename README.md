@@ -47,10 +47,15 @@ ver 0.3.1 gamma
 - hotfixes
 - added .dev functions
 
-ver 0.4.0
+ver 0.4.0 delta
 -
 - removed users
 - remastered some command answer
 - fixed 'mmscale' and 'OSinfo'
 - fixed .dev by removing indents
 - added 'type 'help' for all commands'
+
+ ver 0.4.1 delta
+-
+- some code optimization
+- less code
