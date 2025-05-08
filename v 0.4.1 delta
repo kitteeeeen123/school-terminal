@@ -51,7 +51,9 @@
 #
 # ver 0.4.1 delta
 # - some code optimization
-# - less code
+# - less 
+# - removed openai
+# - fixed base64
 
 
 
