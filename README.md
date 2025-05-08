@@ -59,3 +59,5 @@ ver 0.4.0 delta
 -
 - some code optimization
 - less code
+- fixed base 64
+- removed openai
